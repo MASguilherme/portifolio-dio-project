@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before{
+    box-sizing:border-box;
+}
+
+html, body{
+    height:100vh;
+}
+
+.flex-container{
+    display:flex;
+    height:150px;
+    max-width: 242px;
+    border: 1px solid #000;
+}
+
+.no-wrap{
+    flex-wrap: nowrap;
+}
+
+.wrap{
+    flex-wrap:wrap;
+}
+
+.item{
+    font-size: 24px;
+    height:50%;
+    text-align:center;
+    min-width:80px;
+}
+
+
+.blue{
+    background-color:blue;
+}
+
+.orange{
+    background-color:orange;
+}
+
+.red{
+    background-color:red;
+}
