@@ -21,6 +21,10 @@ html, body{
     flex: 1;
 }
 
+.column{
+    flex-direction:column;
+}
+
 .center{
     align-items:center;
 }
@@ -39,4 +43,13 @@ html, body{
 
 .baseline{
     align-items:baseline;
+}
+
+.central{
+    height:300px;
+    justify-content:center;
+}
+
+.central > .item {
+    flex: 0;
 }
