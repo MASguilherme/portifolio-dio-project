@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before{
+    box-sizing:border-box;
+}
+
+html, body{
+    height:100vh;
+}
+
+
+.container{
+    display:flex;
+    max-width:400px;
+    margin: 0;
+    border: 1px solid #000;
+}
+
+.item{
+    background-color: violet;
+    color:#fff;
+    margin:5px;
+    text-align:center;
+}
+
+
+.flex-start{
+    justify-content:flex-start;
+}
+
+.flex-end{
+    justify-content:flex-end;
+}
+
+.flex-center{
+    justify-content:center;
+}
+
+.space-between{
+justify-content:space-between;
+}
+
+.space-around{
+    justify-content:space-around;
+}
