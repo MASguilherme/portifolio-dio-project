@@ -16,6 +16,10 @@ html, body{
     border: 1px solid #000;
 }
 
+.column{
+    flex-direction:column;
+    min-height:200px;
+}
 .item{
     background-color: violet;
     color:#fff;
