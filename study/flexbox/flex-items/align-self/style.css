@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before{
+    box-sizing:border-box;
+}
+
+html, body{
+    height:100vh;
+}
+
+.container{
+    display:flex;
+    border: 1px solid #000;
+    max-width:700px;
+    height:300px;
+    margin-bottom: 5%;
+}
+.align-container{
+align-items:center;
+}
+.item{
+    background-color:red;
+    margin:5px;
+    text-align:center;
+    font-size:2rem;
+    color:#fff;
+}
+.column{
+    flex-direction:column;
+}
+.center{
+    align-self: center;
+}
+
+.start{
+    align-self: start;
+}
+
+.end{
+    align-self:end;
+}
+
+.baseline{
+    align-self:baseline;
+}
+
+.stretch{
+    align-self:stretch;
+}
+
+.auto{
+    align-self:auto;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fundamentos: Flex Order</title>
+  </head>
+  <body>
+    <h1>Row</h1>
+    <h3>Flex Order</h3>
+     <section class="container">
+       <div class="item o-4">A o-4</div>
+       <div class="item o-3">B o-3</div>
+       <div class="item o-2">C o-2</div>
+       <div class="item o-1">D o-1</div>
+       <!-- Aqueles sem order, vão frente -->
+       <div class="item">E</div>
+       <div class="item">F</div> 
+     </section>
+
+     <h3>Flex Order negative</h3>
+     <section class="container">
+       <div class="item o-4n">A o-4</div>
+       <div class="item o-3n">B o-3</div>
+       <div class="item o-2n">C o-2</div>
+       <div class="item o-1n">D o-1</div>
+       <!-- Aqueles sem order, vão no final -->
+       <div class="item">E</div>
+       <div class="item">F</div> 
+     </section>
+
+     <h1>Column</h1>
+     <h3>Flex Order: 0</h3>
+     <section class="container column">
+       <div class="item o-4">A o-4</div>
+       <div class="item o-3">B o-3</div>
+       <div class="item o-2">C o-2</div>
+       <div class="item o-1">D o-1</div>
+       <!-- Aqueles sem order, vão a frente -->
+       <div class="item">E</div>
+       <div class="item">F</div> 
+     </section>
+
+     <h3>Flex Order negative</h3>
+     <section class="container column">
+       <div class="item o-4n">A o-4</div>
+       <div class="item o-3n">B o-3</div>
+       <div class="item o-2n">C o-2</div>
+       <div class="item o-1n">D o-1</div>
+       <!-- Aqueles sem order, vão no final -->
+       <div class="item">E</div>
+       <div class="item">F</div> 
+     </section>
+  </body>
+</html>
