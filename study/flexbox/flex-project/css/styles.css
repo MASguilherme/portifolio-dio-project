@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
 
 *,
-*::after,
-*::before{
+*::before,
+*::after{
     margin: 0;
     padding: 0;
     box-sizing:border-box;
@@ -19,28 +19,42 @@ ul{
     padding: 0;
 }
 
-ul li a{
+a{
     text-decoration:none;
 }
-header{
-    background-color: #590696;
-    height: 7rem;
-    display:flex;
-    align-items:center;
+
+img{
+    width:100%;
+    display:block;
 }
+
 /* framework */
 .flex-container{
     display:flex;
     max-width:992px;
     width:100%;
     margin:auto;
+    padding: 0 2%;
 }
 /* End framework */
 
 /* menu */
+
+header{
+    background-color: #590696;
+    height: 7rem;
+    display:flex;
+    align-items:center;
+}
+
 header .list-items{
 display:flex;
 }
+
+header h1{
+    color:#fff;
+}
+
 .list-items li{
     margin-right: 0.8rem;
 }
@@ -58,3 +72,54 @@ header .menu{
 }
 
 /* end menu */
+
+/* apresentação */
+
+.apresentacao{
+    height:100vh;
+    align-items:center;
+    justify-content:space-between;
+}
+.text-apresentacao{
+    min-height:100px;
+}
+
+.text-apresentacao h1{
+    color:#590696;
+    font-size:3rem;
+}
+.text-apresentacao p{
+    margin-bottom: 1.5rem;
+}
+.text-apresentacao a{
+    background-color:#C70A80;
+    color: #FFF;
+    padding: 0.5rem 1rem;
+    border-radius: 35px;
+}
+/* end apresentação */
+
+/* Quem somos */
+
+.quem-somos{
+    flex-direction: row-reverse;
+    height: 70vh;
+}
+
+.quem-somos h2{
+    margin-bottom: 3%;
+    color:#590696;
+    font-size:2rem;
+    display:flex;
+}
+
+.quem-somos h2::before{
+    content: "";
+    position:relative;
+    width:10px;
+    height:50px;
+    margin-right:2%;
+    background-color:#590696;
+}
+
+/* emd Quem somos */
