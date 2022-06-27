@@ -36,6 +36,19 @@ img{
     margin:auto;
     padding: 0 2%;
 }
+
+.container-w100{
+    width:100%;
+    background-color:#590696;
+    padding: 2% 0;
+}
+
+.btn{
+    background-color:#C70A80;
+    color: #FFF;
+    padding: 0.5rem 1rem;
+    border-radius: 35px;
+}
 /* End framework */
 
 /* menu */
@@ -91,19 +104,13 @@ header .menu{
 .text-apresentacao p{
     margin-bottom: 1.5rem;
 }
-.text-apresentacao a{
-    background-color:#C70A80;
-    color: #FFF;
-    padding: 0.5rem 1rem;
-    border-radius: 35px;
-}
 /* end apresentação */
 
 /* Quem somos */
 
 .quem-somos{
     flex-direction: row-reverse;
-    height: 70vh;
+    height: 40vh;
 }
 
 .quem-somos h2{
@@ -122,4 +129,216 @@ header .menu{
     background-color:#590696;
 }
 
+.quem-somos img{
+    min-width:325px;
+}
+
 /* emd Quem somos */
+
+/* serviços */
+.servicos{
+    flex-direction:column;
+}
+.servicos h2{
+    font-size: 2.5rem;
+    color:#fff;
+}
+.list-servicos{
+    display:flex;
+    justify-content:space-around; 
+    padding: 3% 0;
+}
+.items-servicos{
+    text-align:center;
+}
+
+.items-servicos img{
+    width:80%;
+    margin: auto;
+}
+
+.items-servicos img:last-child{
+    max-width: 200px;
+    max-height:200px;
+    margin: 0;
+}
+
+.items-servicos p{
+    color:#FBCB0A;
+    font-size: 1.2rem;
+    margin: 10% 0;
+}
+
+
+/* end serviços */
+
+/* plano */
+.planos{
+    flex-direction:column;
+    min-height:80vh;
+}
+.planos h2{
+    color:#590696;
+    font-size:3rem;
+    margin-top:7%;
+}
+.list-plano{
+    display:flex;
+    justify-content: space-around;
+    align-items:flex-end;
+    margin: 5% 0;
+}
+.plano-item{
+    border: 5px solid #590696;
+    border-radius: 5px;
+    flex: 1;
+    margin-right: 2rem;
+    padding: 2%;
+}
+.plano-item:last-child{
+    margin-right: 0;
+}
+
+.plano-item ul{
+   margin-bottom: 20px;
+   color: #590696;
+   line-height:2rem;
+   padding: 0 3.5%; 
+   display:flex;
+   flex-direction:column;
+} 
+
+.plano-item ul li{
+    display:flex;
+    flex-wrap:nowrap;
+    align-items:center;
+}
+.plano-item ul li::before{
+    content: " ";
+    width:10px;
+    height:10px;
+    margin-right: 10px;
+    background-color:#590696;
+}
+
+.plano-item h3{
+    font-size:2rem;
+    text-align:center;
+    color: #590696;
+    display:flex;
+    flex-direction:column;
+    margin-bottom: 2%;
+}
+
+.plano-item h3::after{
+    content: " ";
+    width: 100%;
+    height: 2px;
+    background-color: #590696;
+    margin: 8.5% 0;
+}
+
+/* end plano */
+
+/* footer */
+
+footer{
+    background-color:#590696;
+    color:#FBCB0A;
+    padding: 3% 0;
+}
+.footer{
+    justify-content:space-between;
+}
+
+/* end footer */
+
+/* mobile */
+@media (max-width:1240px){
+    .quem-somos{
+        height:60vh;
+    }
+}
+
+@media(max-width:662px){ 
+    /* mobile framework */
+
+    .menu{
+        text-align:center;
+    }
+    .list-items{
+       justify-content:center;
+    }
+    .flex-container{
+        max-width: 80%;
+        flex-direction:column;
+    }
+
+    /* end mobile framework */
+
+    /* quem somos */
+    .quem-somos{
+        height:80%;
+        flex-direction:column;
+    }
+    .quem-somos img{
+        justify-content: center;
+        width:60%;
+        min-width:100px;
+        margin: 0 auto;
+    }
+
+    /* end quem somos */
+
+    /* apresentacao */
+        .apresentacao{
+            flex-direction:column-reverse;
+            height: 80vh;
+            justify-content:center;
+            margin-top:1rem;
+            text-align:center;
+        }
+
+        .apresentacao img{
+            width: 80%;
+            min-width: 200px;
+            margin: 0 auto;
+            margin-top: 2rem;
+        }
+     /* apresentacao */
+
+     /* serviços */
+        .list-servicos{
+            flex-direction:column;
+        }
+
+        .list-servicos .items-servicos img{
+            margin: 5% auto;
+        }
+     /* end serviços */
+     /* planos */
+        .list-plano{
+            flex-direction: column;
+            align-items:flex-start;
+            justify-content:space-between;   
+            margin: 0 auto;    
+        }
+        .plano-item{
+            margin: 3% 0;
+            padding: 8% 0;
+            width:100%;
+        }
+        .plano-item .btn{
+            margin: 2%;
+        }
+
+      /* end planos */
+
+      /* footer */
+      .footer{
+        align-items:center;
+      }
+      /* end footer */
+}
+
+/* end mobile */
